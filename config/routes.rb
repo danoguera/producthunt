@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 	patch '/products/:id', to: 'products#update'
 	delete '/products/:id', to: 'products#destroy' 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root :to => 'index#index'
 end
