@@ -1,3 +1,16 @@
 @import "bootstrap";
+@import "font-awesome";
+@import "products";
 
-.btn{margin-top: 15px;}
+.btn{margin-top: 7px;}
+
+.rounded-circle {width: 40px;}
+
+.fa{color: grey; padding: 13px 10px 0 0;}
+
+.dropdown-menu {
+    min-width: 3rem;
+    min-height: 3rem;
+}
+
+li{padding: 0 15px 0 0}
