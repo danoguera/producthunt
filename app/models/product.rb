@@ -10,4 +10,6 @@
 #  updated_at  :datetime         not null
 #
 class Product < ActiveRecord::Base
+	validates :name, presence: true
+	validates :url, presence: true
 end
