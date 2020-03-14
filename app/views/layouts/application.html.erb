@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ProducthuntVer0</title>
+    <title>Product Hunt</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -20,6 +20,9 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
+          <form class="form-inline my-2 my-lg-0 ml-auto pr-4">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
           <% if signed_in? %>
             <li><%= link_to "<span class='fa fa-plus fa-2x'</span>".html_safe, new_product_path %></li>
             <li class="nav-item dropdown">
@@ -31,10 +34,11 @@
               </ul>
             </li> 
             <% else %>
-             <li><%= link_to "Sign Up", new_user_path %></li>
-             <li><%= link_to "Login", login_path %></li>
+             <li><%= link_to "Sign Up", new_user_path, class: "btn" %></li>
+             <li><%= link_to "Login", login_path, class: "btn" %></li>
           <% end %>
         </ul>  
+
       </div>
     </nav>
 
